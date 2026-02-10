@@ -73,7 +73,7 @@ const collageImages = [
 
 let noClicks = 0;
 let scale = 1;
-const fullscreenThreshold = 8;
+const fullscreenThreshold = isMobile ? 3 : 8;
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i -= 1) {
@@ -124,6 +124,7 @@ function renderCollage() {
 }
 
 function makeYesFullscreen() {
+  document.body.style.overflow = "hidden";
   yesBtn.classList.add("fullscreen");
   yesBtn.textContent = "YES POOKIE";
   noBtn.style.display = "none";

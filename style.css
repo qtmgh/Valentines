@@ -191,9 +191,13 @@ button {
 
 #yesBtn.fullscreen {
   position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  min-height: 100dvh;
   border-radius: 0;
   transform: none !important;
   font-size: clamp(2rem, 8vw, 5.5rem);
@@ -201,6 +205,8 @@ button {
   display: grid;
   place-items: center;
   letter-spacing: 0.02em;
+  margin: 0;
+  padding: 1rem;
 }
 
 #noBtn {
@@ -395,6 +401,18 @@ button {
   .actions button {
     width: min(100%, 320px);
     font-size: 1rem;
+  }
+
+  #yesBtn.fullscreen {
+    width: 100vw;
+    width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
+    max-width: none;
+    border-radius: 0;
+    left: 0;
+    right: 0;
   }
 
   .memory-grid {
