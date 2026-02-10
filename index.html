@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hearts-bg" aria-hidden="true"></div>
+    <div class="candles-bg" aria-hidden="true">
+      <span class="candle c1"><i class="flame"></i></span>
+      <span class="candle c2"><i class="flame"></i></span>
+      <span class="candle c3"><i class="flame"></i></span>
+      <span class="candle c4"><i class="flame"></i></span>
+      <span class="candle c5"><i class="flame"></i></span>
+    </div>
+
+    <main id="proposalCard" class="card">
+      <h1>My Pookie + Gatitos = Perfect Valentine</h1>
+      <p>
+        My Pookie! This may come as a surprise for you but this is for you hehe.. you make me so happy and I cherish you so so much.
+        As I've been with you longer, the more I realize how special you are my pookie. From your smile to your eyes looking at me just
+        makes me love you even more. I know I ragebait you a little too much but I just can't help teasing you to see you smile and laugh.
+        I love you so much pookie, will you be my valentine?
+      </p>
+
+      <section class="cats" aria-label="Cats in love and cuddling">
+        <img
+          src="https://i.pinimg.com/236x/e2/86/75/e28675d7e6f5a901a51d1983a4162bd3.jpg"
+          alt="Two cats cuddling"
+        />
+        <img
+          src="https://images.ctfassets.net/sfnkq8lmu5d7/14QOFP24nY46kGXOCfOc5U/5d52245f7bf738d636883cd8286c285f/The-Wildest_Editorial_Cat_socialization_Hero.jpg?w=1000&h=750&fl=progressive&q=70&fm=jpg"
+          alt="A cat and kitten cuddling"
+          onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/d/dc/Cats_cuddling.jpg';"
+        />
+        <img
+          src="https://i.pinimg.com/736x/82/86/9e/82869e796ad8730c3d48fec158f371ba.jpg"
+          alt="Two cozy cats resting together"
+          onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/d/dc/Cats_cuddling.jpg';"
+        />
+      </section>
+
+      <div class="actions">
+        <button id="yesBtn" type="button">Yes, obviously</button>
+        <button id="noBtn" type="button">No, not yet</button>
+      </div>
+      <div id="message" aria-live="polite"></div>
+    </main>
+
+    <section id="loveScreen" class="love-screen" aria-hidden="true">
+      <canvas id="fireworksCanvas"></canvas>
+      <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+      <div id="heartLayer" class="heart-layer" aria-hidden="true"></div>
+
+      <div class="love-content">
+        <h2>I LOVE YOU SO MUCH POOKIE!!!!!!</h2>
+        <p>Us and gatitos heheheh</p>
+
+        <div class="memory-grid">
+          <div class="photo-slot" aria-label="Photo of us">
+            <img src="us/pookies.jpeg" alt="Photo of us together" />
+          </div>
+          <div class="photo-slot" aria-label="Photo of two cats">
+            <img
+              src="https://preview.redd.it/h2wrz2n3blz51.jpg?width=640&crop=smart&auto=webp&s=9063c40ff0c436bcf074e0c09ef62c92a5f3fb91"
+              alt="Two cats cuddling together"
+            />
+          </div>
+        </div>
+
+        <h3 class="collage-title">Our photo collage</h3>
+        <div class="collage-stack">
+          <div id="collageTall" class="collage-grid" aria-label="Tall photos"></div>
+          <div id="collageWide" class="collage-grid" aria-label="Wide photos"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
