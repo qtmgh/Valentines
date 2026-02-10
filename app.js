@@ -128,7 +128,6 @@ function makeYesFullscreen() {
   yesBtn.classList.add("fullscreen");
   yesBtn.textContent = "YES POOKIE";
   noBtn.style.display = "none";
-  message.textContent = "The yes button has taken over.";
 }
 
 function spawnConfetti(count = 100) {
